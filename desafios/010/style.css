@@ -28,36 +28,63 @@ body {
 
 header{
     background: linear-gradient(var(--cor2), var(--cor5));
-    justify-content: center;
     text-align: center;
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+header h1{
     color: white;
-    height: 200px;
     font-family: 'Roboto';
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
 header h2{
-    width: 600px;
-    text-align: center;
-    justify-content: center;
-    color: var(--cor1);
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: white;
+    max-width: 600px;
+    margin: auto;
 }
 
 header nav{
+    display: block;
     text-align: left;
+    padding: 50px 10px 10px 10px;
 }
 
 header a{
     text-decoration: none;
     color: white;
+    padding: 10px;
 }
 
 main {
     justify-content: center;
-    margin: 0px 100px 15px;
+    margin: auto;
+    margin-bottom: 10px;
     background-color: white;
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 0px 0px 10px 10px;
+
+    min-width: 300px;
+    max-width: 1000px;
+}
+
+main img {
+    width: 100%;
+}
+
+picture {
+    width: 100%;
+    margin: auto;
+}
+
+#imgPequena{
+    width: 30%;
+    margin: auto;
 }
 
 main a {
@@ -97,7 +124,13 @@ picture {
 #video{
     background-color: var(--cor4);
     text-align: center;
-    padding: 30px;
+    padding: 10px;
+    margin: 0 -30px 0 -30px;
+}
+
+#video iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
 }
 
 aside {
@@ -105,6 +138,7 @@ aside {
     background-color: var(--cor0);
     border-radius: 10px;
     text-align: justify;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 aside h3 {
@@ -124,10 +158,19 @@ ul {
     columns: 2;
     list-style-type: '\1F5F8';
     margin-left: 15px;
+    padding: 20px;
 }
 
 footer {
     background-color: var(--cor5);
+    color: white;
+    font-weight: 100;
     text-align: center;
     padding: 10px;
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }

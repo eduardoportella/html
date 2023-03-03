@@ -10,7 +10,7 @@
    </head>
    <body>
       <header>
-         <h1>Curiosidades de Tecnologia</h1>
+         <h1>CURIOSIDADES DE TECNOLOGIA</h1>
          <h2>
             Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um
             único lugar
@@ -53,8 +53,8 @@
          </p>
 
          <picture>
-            <img src="imagens/dan-droids.png" alt="" />
-            <!-- <img src="imagens/dan-droids-pq.png" alt=""> -->
+            <source media="(min-width:650px)" srcset="imagens/dan-droids.png">
+            <img src="imagens/dan-droids-pq.png" alt="" />
          </picture>
 
          <p>
@@ -73,8 +73,8 @@
          </p>
 
          <picture>
+            <source media="(max-width:650px)" srcset="imagens/irina-blok-pq.jpg">
             <img src="imagens/irina-blok.jpg" alt="" />
-            <!-- <img src="imagens/irina-blok-pq.jpg" alt=""> -->
          </picture>
 
          <p>
@@ -84,7 +84,7 @@
             <strong>Bugdroid</strong>, o novo mascote do Android.
          </p>
 
-         <picture>
+         <picture id="imgPequena">
             <img src="imagens/bugdroid.png" alt="" />
          </picture>
 
@@ -99,7 +99,7 @@
 
          <div id="video">
             <iframe
-               width="80%"
+               width="70%"
                height="500px"
                src="https://www.youtube.com/embed/l2UDgpLz20M"
                title="YouTube video player"
@@ -161,9 +161,9 @@
          </p>
       </main>
       <footer>
-         Site criado por
-         <a href="https://github.com/gustavoguanabara">Gustavo Guanabara</a>
-         para o
+         Site replicado por
+         <a href="https://github.com/eduardoportella">Eduardo Portella</a>
+         baseado no
          <a href="youtube.com/cursoemvideo" target="_blank">CursoemVideo</a>.
       </footer>
    </body>
